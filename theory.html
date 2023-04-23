@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="maincss.css">
+    <title>Theory</title>
+  </head>
+  <body bgcolor="#87CEFA">
+
+  	<div id="nav-placeholder" style="background-color:white;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:100%; width:1160px;margin-bottom: 20px">
+  	  	<ul>
+  	  <li ><img src="aim.png" alt="Theory" height="70px" class="active" width="80px"><a  href="aim.html">Aim</a></li>
+	  <li ><img src="theory.png" alt="Theory" height="70px"  width="70px"><a  href="theory.html">Theory</a></li>
+	  <li><img src="simulation.png" alt="Theory" height="70px" width="70px"><a href="simulation.html">Simulation</a></li>
+	  <li><img src="test.png" alt="Theory" height="70px" width="70px"><a href="test.html">Post-Test</a></li>
+	</ul>
+  		
+  	</div>
+  		
+
+  	<div id="whole_body" style=" background-color:white;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:100%; width:1160px;margin-bottom: 20px;padding-bottom: 20px">
+	  	<div style="font-size:30px; text-align:center;padding-top: 5px">
+    		<b> 4 QUEENS/ N QUEENS​
+​ </b>
+    	</div>
+	    
+  	<h3 style="display: block; margin-left: 20px;">Theory:</h3>	
+<ul>
+  	<li> The problem here is to place queens on the empty chessboard in such a way that no queen attacks any other queen.​
+
+<li>To begin with, we have to represent the chessboard configuration to identify the location of all the queens.​
+
+<li>One way to do it is to use a list of pairs,X/Y,such that{X, Y}is the coordinate of a queen in the board.​
+
+<li>Thus, the following configuration, also a solution, can be represented with [1/3, 2/1, 3/4, 4/2]​
+</ul>
+
+<br>
+<h3 style="display: block; margin-left: 20px;">Procedure:</h3>	
+<ul>
+  	<li>Initialize an empty chessboard of size NxN.
+	<li>Start with the leftmost column and place a queen in the first row of that column.
+	<li>Move to the next column and place a queen in the first row of that column.
+	<li>Repeat step 3 until either all N queens have been placed or it is impossible to place a queen in the current column without violating the rules of the problem.
+	<li>If all N queens have been placed, print the solution.
+	<li>If it is not possible to place a queen in the current column without violating the rules of the problem, backtrack to the previous column.
+	<li>Remove the queen from the previous column and move it down one row.
+	<li>Repeat steps 4-7 until all possible configurations have been tried.
+</ul>
+</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </body>
+</html>
